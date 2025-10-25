@@ -39,7 +39,24 @@
     font-size: 16px;
     line-height: 30px;
   }
-  .running-text {
+  .scrolling-text {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+    /* font-size: 24px; */
+    animation: bounce 28s ease-in-out infinite;
+    /* border: 1px solid #ccc;
+    padding: 10px 0;
+    background-color: #f0f0f0; */
+  }
+  @keyframes bounce {
+    0% { transform: translateX(88%); }
+    50% { transform: translateX(-1%); }
+    100% { transform: translateX(88%); }
+  }
+
+/*  .running-text {
     display: inline-block;
     white-space: nowrap;
     padding-left: 100%;
@@ -51,7 +68,7 @@
     }
     to {
       transform: translateX(-100%);
-    }
+    } /*
   }
 </style>
 </head>
@@ -105,8 +122,9 @@
 </center>
   </main>
   <footer>
-    <div class="running-text">
-       歡迎來到太極推手、功夫分享班
+    <!-- div class="running-text" --!>
+    <div class="scrolling-text">
+       歡迎到臨太極推手、功夫分享班
     </div>
   </footer>
 </body>
