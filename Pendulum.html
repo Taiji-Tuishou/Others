@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pendulum</title>
+  <style>
+    body {
+      margin: 10;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      background: #96c8ff;
+    }
+
+    .pendulum-wrapper {
+      width: 300px;              /* adjust to your GIF width */
+      height: 300px;             /* adjust as needed */
+      display: flex;
+      justify-content: center;
+      transform-origin: 50% 300%;  /* pivot at top center */
+      animation: swing 5s ease-in-out infinite alternate;
+    }
+
+    .pendulum-wrapper img {
+      display: block;
+      width: 95%;
+      height: auto;
+    }
+
+    @keyframes swing {
+      0%   { transform: rotate(-15deg); }
+      100% { transform: rotate(15deg); }
+    }
+  </style>
+</head>
+<body>
+<center>
+    <table width=650px border=0>
+        <tbody>
+            <tr>
+                <td colspan="2">
+                    &nbsp;
+                </td>
+            </tr>
+            <tr>
+                <td width=150px>
+                    <br><br><br><br><br><br><br>
+                </td>
+                <td>
+                  <div class="pendulum-wrapper">
+                    <a href="javascript:history.back()">
+                    <img src="Push_hands.gif" alt="Pendulum">
+                    </a>
+                  </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <br><br><br><br><br>
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                   <img src="website-under-construction.png" alt="Centered image">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+	              <table>
+                          <td width=30%>
+                                &nbsp;
+                          </td>
+                          <td width=40%  style="text-align:center;">
+                  <p style="text-align:center;">
+                    <a href="../Fists-kicks/Index.html">
+                      <button type="button" style="text-decoration:none; padding:8px 16px; background:#007BFF; color:#fff; border-radius:12px;">
+                      <span style="font-size:18px;">拳腳</span></button>
+                    </a>
+                    <a href="../Weapons/Index.html">
+                      <button type="button" style="text-decoration:none; padding:8px 16px; background:#FF007B; color:#fff; border-radius:12px;">
+                      <span style="font-size:18px;">兵器</span></button>
+                    </a>
+                    <a href="../Wellness/Index.html">
+                      <button type="button" style=" text-decoration:none; padding:8px 16px; background:#7BFF00; color:#fff; border-radius:12px;">
+                      <span style="font-size:18px;">養生</span></button>
+                    </a>
+                  </p>
+                          </td>
+                          <td width=30%  style="text-align: right;">
+                                &nbsp;
+                          </td>
+                      </tr>
+	                   </table>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</center>
+</body>
+</html>
